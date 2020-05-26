@@ -1,0 +1,5 @@
+# Project exclude paths
+/examples/simple.js
+/node_modules/
+/log-call.decorator.js
+/log-types.enum.js

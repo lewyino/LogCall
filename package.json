@@ -1,0 +1,27 @@
+{
+  "name": "logcall",
+  "version": "1.0.0",
+  "description": "TypeScript decorator for log method call",
+  "main": "log-call.decorator.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "typescript": "^3.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "log",
+    "decorator",
+    "logger"
+  ],
+  "author": {
+    "name": "lewyino",
+    "url": "http://lewyino.pl"
+  },
+  "license": "MIT"
+}
