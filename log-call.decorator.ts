@@ -9,12 +9,12 @@ export function LogCall(
     if (!fnExist) {
         console.error(`no function "${logType}" in "${logger.constructor.name}"`);
     }
-    return function(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+    return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
         const method = descriptor.value;
         if (!fnExist) {
             return method;
         }
-        descriptor.value = function() {
+        descriptor.value = function () {
             const args = Array.from(arguments).reduce((acc, curr, index) => {
                 return '' + acc + (index ? ', ' : '') + curr;
             }, '');
